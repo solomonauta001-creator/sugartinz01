@@ -1,10 +1,6 @@
 __pycache__/
-*.py[cod]
-*$py.class
-*.log
+*.pyc
+*.pyo
 .env
-venv/
-env/
-.vscode/
-.idea/
-
+uploads/*
+!uploads/.gitkeep
