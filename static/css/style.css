@@ -1,0 +1,115 @@
+/* Custom Pink Styling & Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+    animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Navigation Tab active state */
+.nav-tab-btn.active {
+    background: #ec4899;
+    color: #ffffff;
+    box-shadow: 0 4px 14px 0 rgba(236, 72, 153, 0.35);
+}
+
+.nav-tab-btn:not(.active) {
+    color: #4b5563;
+}
+
+.nav-tab-btn:not(.active):hover {
+    color: #db2777;
+    background-color: #fce7f3;
+}
+
+/* Sub tabs in Admin */
+.admin-subtab-btn.active {
+    color: #db2777;
+    border-bottom: 2px solid #db2777;
+}
+
+/* Card hover glow */
+.job-card {
+    transition: all 0.25s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px -10px rgba(219, 39, 119, 0.15);
+    border-color: #fbcfe8;
+}
+
+/* Custom Scrollbar styled in pink */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdf2f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f472b6;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #db2777;
+}
+
+/* Pipeline Status Badges */
+.badge-status-applied {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+}
+
+.badge-status-reviewing {
+    background-color: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fde68a;
+}
+
+.badge-status-interview {
+    background-color: #fce7f3;
+    color: #be185d;
+    border: 1px solid #fbcfe8;
+}
+
+.badge-status-offered {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.badge-status-rejected {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+}
+
